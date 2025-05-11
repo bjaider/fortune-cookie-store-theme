@@ -1,0 +1,7 @@
+{
+  "store.custom#fortune-cookie": {
+    "blocks": [
+      "fortune-cookie-quote"
+    ]
+  }
+}

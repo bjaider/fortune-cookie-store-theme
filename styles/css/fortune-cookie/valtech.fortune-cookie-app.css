@@ -1,0 +1,50 @@
+.fortuneCookieContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fortuneCookieButton {
+  background-color: #002fa7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.fortuneCookieButton:hover {
+  background-color: #002fa7;
+}
+
+.fortuneCookieSpinner {
+  margin-top: 1rem;
+}
+
+.fortuneCookieQuoteWrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.fortuneCookiePhrase {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.fortuneCookieLuckyNumber {
+  font-size: 1rem;
+  color: #666;
+}
