@@ -1,65 +1,81 @@
-# Store theme
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-Our boilerplate theme to create stores in the VTEX IO platform.
 
-## Preview
-![store-theme-default](https://user-images.githubusercontent.com/1354492/63937047-e8d81c80-ca37-11e9-86fc-61e88847bbfb.png)
+# Fortune Cookie Store Theme
 
-## Tutorial
-To understand how things work check our tutorial [Build a store using VTEX IO](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/)
+**Fortune Cookie Store Theme** is a custom storefront theme built for the **VTEX IO** platform. It displays fortune cookie-style messages to users, designed to work seamlessly with the [Fortune Cookie Admin App](https://github.com/bjaider/fortune-cookie-admin-app).
 
-## Dependencies
-All store components that you see on this document are open source too. Production ready, you can found those apps in this GitHub organization.
+## 🎯 Purpose
 
-Store framework is the baseline to create any store using _VTEX IO Web Framework_.
-- [Store](https://github.com/vtex-apps/store/blob/master/README.md)
+This theme serves as the frontend implementation for the Fortune Cookie functionality, fetching and displaying messages configured by store admins.
 
-Store GraphQL is a middleware to access all VTEX APIs.
-- [Store GraphQL](https://github.com/vtex-apps/store-graphql/blob/master/docs/README.md)
+## 🚀 Features
 
-### Store Component Apps
-- [Header](https://github.com/vtex-apps/store-header/blob/master/docs/README.md)
-- [Footer](https://github.com/vtex-apps/store-footer/blob/master/docs/README.md)
-- [Slider Layout](https://github.com/vtex-apps/slider-layout/blob/master/docs/README.md)
-- [Shelf](https://github.com/vtex-apps/shelf/blob/master/docs/README.md)
-- [Telemarketing](https://github.com/vtex-apps/telemarketing/blob/master/docs/README.md)
-- [Menu](https://github.com/vtex-apps/menu/blob/master/docs/README.md)
-- [Login](https://github.com/vtex-apps/login/blob/master/docs/README.md)
-- [Minicart](https://github.com/vtex-apps/minicart/blob/master/docs/README.md)
-- [Category Menu](https://github.com/vtex-apps/category-menu/blob/master/docs/README.md)
-- [Product Summary](https://github.com/vtex-apps/product-summary/blob/master/docs/README.md)
-- [Breadcrumb](https://github.com/vtex-apps/breadcrumb/blob/master/docs/README.md)
-- [Search Result](https://github.com/vtex-apps/search-result/blob/master/docs/README.md)
-- [Product Details](https://github.com/vtex-apps/product-details/blob/master/docs/README.md)
-- [Store Components](https://github.com/vtex-apps/store-components/blob/master/docs/README.md)
-- [Order Placed](https://github.com/vtex-apps/order-placed/blob/master/docs/README.md) 
+- Dynamic rendering of fortune messages.
+- Integration with the backend logic from the Admin App.
+- Custom design assets and styling.
+- Compatible with VTEX IO theme customization practices.
 
-### Store Pixel Apps
+## 📁 Project Structure
 
- - [Facebook Pixel](https://github.com/vtex-apps/facebook-pixel/blob/master/docs/README.md)
- - [Google Tag Manager](https://github.com/vtex-apps/google-tag-manager/blob/master/docs/README.md)
+- `.github/`: Repository metadata and CI workflows.
+- `assets/`: Static assets like images and fonts.
+- `docs/`: Documentation files.
+- `store/`: Theme configuration and blocks.
+- `styles/`: styles for store layout.
 
-## Contributing
+## 📦 Setup Instructions
 
-Check it out [how to contribute](https://github.com/vtex-apps/awesome-io#contributing) with this project.
+> 🛠️ **Prerequisite:** Make sure you have the [VTEX IO CLI installed](https://developers.vtex.com/docs/guides/vtex-io-documentation-vtex-io-cli-install) on your machine.
 
-## Contributors ✨
+1. Clone the repository:
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+   ```bash
+   git clone https://github.com/bjaider/fortune-cookie-store-theme.git
+   cd fortune-cookie-admin-app
+   ```
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="http://www.hugoccosta.com"><img src="https://avatars2.githubusercontent.com/u/20212776?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Costa</b></sub></a><br /><a href="https://github.com/vtex-apps/store-theme/commits?author=hugocostadev" title="Documentation">📖</a></td>
-  </tr>
-</table>
+2. Log in to your VTEX account:
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+   ```bash
+   vtex login {your-account}
+   ```
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+3. Use the workspace:
+
+   ```bash
+   vtex use {your-workspace}
+   ```
+
+4. Link the app:
+
+   ```bash
+   vtex link
+   ```
+
+5. Open the app in the VTEX Admin:
+
+   ```
+   https://{your-workspace}--{your-account}.myvtex.com/admin/app/fortune-cookie
+   ```
+
+## ⚙️ Configuration
+
+This theme depends on the [Fortune Cookie Admin App](https://github.com/bjaider/fortune-cookie-admin-app). Make sure it's installed and that you've set the **AppKey** and **AppToken**.
+
+You can configure them at:
+
+```
+https://{your-workspace}--{your-account}.myvtex.com/admin/apps/valtech.fortune-cookie-app@1.0.2/setup
+```
+
+You should see a screen like the following one (see image below):
+
+![image](https://github.com/user-attachments/assets/fe206bbe-125e-4241-a0a8-d6bcf643f597)
+
+## 📬 Contact
+
+- Developer: Jaider Bermudez  
+- GitHub: [@bjaider](https://github.com/bjaider)
+
+
+
+
