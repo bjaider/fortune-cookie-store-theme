@@ -3,5 +3,10 @@
     "blocks": [
       "fortune-cookie-quote"
     ]
+  },
+  "fortune-cookie-quote":{
+    "props":{
+      "backgroundImage": "assets/background-image.png"
+    }
   }
 }
